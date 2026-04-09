@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://melodyboxcustomsong.github.io/sitemap.xml
