@@ -986,7 +986,47 @@
     .web-icon svg { width: 34px; height: 34px; fill: currentColor; color: #fff; }
     .website-price-note { text-align: center; margin-top: 18px; color: var(--muted); }
 
-    .video-grid, .steps-grid, .contact-grid { display: grid; gap: 18px; }
+.video-grid, .steps-grid, .contact-grid { display: grid; gap: 18px; }
+.video-card {
+  display: grid;
+  gap: 16px;
+}
+.video-card-top {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.video-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  background: linear-gradient(135deg, rgba(143, 92, 255, 0.24), rgba(61, 184, 255, 0.18));
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 14px 28px rgba(143, 92, 255, 0.18);
+  animation: icon-bob 4.4s ease-in-out infinite;
+}
+.video-card-top p {
+  margin: 0;
+}
+.video-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.video-feature-list span {
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.11);
+  background: rgba(255,255,255,0.06);
+  color: #eef4ff;
+  font-size: 0.76rem;
+  font-weight: 600;
+  box-shadow: 0 12px 24px rgba(8, 10, 26, 0.14);
+}
     .steps-grid { counter-reset: steps; }
     .step-card {
       counter-increment: steps;
@@ -1215,6 +1255,10 @@
     @keyframes icon-glow {
       0%, 100% { box-shadow: 0 12px 30px rgba(143, 92, 255, 0.18); }
       50% { box-shadow: 0 20px 42px rgba(61, 184, 255, 0.24), 0 0 26px rgba(255, 79, 216, 0.18); }
+    }
+    @keyframes blog-chip-pulse {
+      0%, 100% { transform: translateY(0); box-shadow: 0 14px 30px rgba(143, 92, 255, 0.22), 0 0 28px rgba(255, 79, 216, 0.12); }
+      50% { transform: translateY(-3px); box-shadow: 0 18px 36px rgba(61, 184, 255, 0.24), 0 0 32px rgba(255, 79, 216, 0.18); }
     }
 
     @media (min-width: 640px) {
@@ -1781,6 +1825,13 @@ img { display: block; max-width: 100%; height: auto; }
 .quick-nav-chip-primary {
   background: linear-gradient(135deg, rgba(143, 92, 255, 0.96), rgba(255, 79, 216, 0.92), rgba(61, 184, 255, 0.92));
   color: #fff;
+}
+.quick-nav-chip-blog {
+  background: linear-gradient(135deg, rgba(255, 79, 216, 0.22), rgba(143, 92, 255, 0.18), rgba(61, 184, 255, 0.16));
+  border-color: rgba(255,255,255,0.18);
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(143, 92, 255, 0.22), 0 0 28px rgba(255, 79, 216, 0.12);
+  animation: blog-chip-pulse 3.8s ease-in-out infinite;
 }
 
 .trust-pills {
@@ -2405,6 +2456,27 @@ img { display: block; max-width: 100%; height: auto; }
     padding: 11px 12px;
     font-size: 0.88rem;
     border-radius: 16px;
+  }
+
+  .video-card-top {
+    grid-template-columns: 50px 1fr;
+    gap: 12px;
+  }
+
+  .video-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: 1.2rem;
+  }
+
+  .video-feature-list {
+    gap: 8px;
+  }
+
+  .video-feature-list span {
+    font-size: 0.7rem;
+    padding: 8px 10px;
   }
 
   .stats-grid .stat-card {
