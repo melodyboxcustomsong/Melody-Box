@@ -584,8 +584,9 @@
               <img src="imageslogo.png" alt="Melody Box Logo" loading="lazy" />
             </span>
             <div class="footer-brand-copy">
+              <span class="footer-brand-kicker">Custom Songs | Celebration Websites</span>
               <strong>MELODY BOX</strong>
-              <p>Premium custom songs and celebration websites designed to turn your emotions into unforgettable experiences.</p>
+              <p>Premium custom songs and celebration websites crafted to turn your emotions into unforgettable digital experiences.</p>
             </div>
           </div>
         </div>
@@ -1070,7 +1071,11 @@
           const progress = Math.min((now - startTime) / duration, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
           counter.textContent = `${Math.floor(target * eased)}+`;
-          if (progress < 1) requestAnimationFrame(tick);
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            setTimeout(() => animateCounter(counter), 1400);
+          }
         };
 
         requestAnimationFrame(tick);
