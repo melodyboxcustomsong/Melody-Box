@@ -162,7 +162,7 @@
               </div>
 
               <div class="trust-pills">
-                <span>1000+ Happy Clients</span>
+                <span class="counter-pill"><strong class="counter-number" data-target="1000">0</strong><em>Happy Clients</em></span>
                 <span>All India Languages</span>
                 <span>Delivery Within 2 Days</span>
               </div>
@@ -578,24 +578,26 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-card">
-          <div class="brand" style="margin-bottom: 12px;">
-            <span class="brand-badge"><img src="imageslogo.png" alt="Melody Box Logo" loading="lazy" /></span>
-            <span>MELODY BOX</span>
+        <div class="footer-card footer-brand-card">
+          <div class="footer-brand-shell">
+            <span class="footer-brand-glow">
+              <img src="imageslogo.png" alt="Melody Box Logo" loading="lazy" />
+            </span>
+            <div class="footer-brand-copy">
+              <strong>MELODY BOX</strong>
+              <p>Premium custom songs and celebration websites designed to turn your emotions into unforgettable experiences.</p>
+            </div>
           </div>
-          <p class="muted" style="margin: 0;">
-            Premium custom songs and celebration websites designed to turn your emotions into unforgettable experiences.
-          </p>
         </div>
 
         <div class="footer-card">
           <h4>Quick Links</h4>
-          <div class="footer-links">
-            <a href="#services">Services</a>
-            <a href="#song-packages">Song Packages</a>
-            <a href="#demos">Demos</a>
-            <a href="#spotify">Spotify</a>
-            <a href="#contact">Contact</a>
+          <div class="footer-links footer-link-grid">
+            <a class="footer-link-pill" href="#services"><span class="footer-link-icon">S</span><span>Services</span></a>
+            <a class="footer-link-pill" href="#song-packages"><span class="footer-link-icon">P</span><span>Song Packages</span></a>
+            <a class="footer-link-pill" href="#demos"><span class="footer-link-icon">D</span><span>Demos</span></a>
+            <a class="footer-link-pill" href="#spotify"><span class="footer-link-icon">M</span><span>Spotify</span></a>
+            <a class="footer-link-pill" href="#contact"><span class="footer-link-icon">C</span><span>Contact</span></a>
           </div>
         </div>
 
@@ -1055,6 +1057,38 @@
       });
     }
 
+    function setupCounters() {
+      const counters = document.querySelectorAll(".counter-number");
+      if (!counters.length) return;
+
+      const animateCounter = counter => {
+        const target = Number(counter.dataset.target || 0);
+        const duration = 1600;
+        const startTime = performance.now();
+
+        const tick = now => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          counter.textContent = `${Math.floor(target * eased)}+`;
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+
+        requestAnimationFrame(tick);
+      };
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const counter = entry.target;
+          if (counter.dataset.animated) return;
+          counter.dataset.animated = "true";
+          animateCounter(counter);
+        });
+      }, { threshold: 0.45 });
+
+      counters.forEach(counter => observer.observe(counter));
+    }
+
     function setupRevealAnimations() {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -1146,6 +1180,7 @@
     setupWebsiteDemoClicks();
     setupGlobalWhatsAppButtons();
     setupWhatsAppForm();
+    setupCounters();
     setupRevealAnimations();
     setupParallax();
     openFolder(0, false);
