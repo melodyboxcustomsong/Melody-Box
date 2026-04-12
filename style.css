@@ -378,6 +378,25 @@
       background: rgba(255, 255, 255, 0.08);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
     }
+    .counter-pill {
+      display: inline-grid;
+      gap: 2px;
+      justify-items: center;
+      min-width: 126px;
+    }
+    .counter-number {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.02rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+    }
+    .counter-pill em {
+      font-style: normal;
+      font-size: 0.76rem;
+      color: #dde6ff;
+      line-height: 1.3;
+    }
 
     .stats-grid,
     .services-grid,
@@ -1192,6 +1211,89 @@
     .footer-links, .social-row { display: flex; flex-wrap: wrap; gap: 12px; }
     .footer-links a, .social-link { color: var(--muted); transition: color 0.22s ease, transform 0.22s ease; }
     .footer-links a:hover, .social-link:hover { color: white; transform: translateY(-2px); }
+    .footer-brand-card {
+      padding: 18px 18px 16px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 18px 40px rgba(8, 10, 28, 0.18);
+    }
+    .footer-brand-shell {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 14px;
+      align-items: center;
+    }
+    .footer-brand-glow {
+      width: 68px;
+      height: 68px;
+      padding: 10px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.22), transparent 44%),
+        linear-gradient(145deg, rgba(20, 24, 58, 0.98), rgba(8, 10, 26, 0.95));
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 0 0 8px rgba(255,255,255,0.03), 0 0 34px rgba(143, 92, 255, 0.24);
+      animation: pulse-ring 3.4s ease-in-out infinite;
+    }
+    .footer-brand-glow img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    .footer-brand-copy {
+      min-width: 0;
+    }
+    .footer-brand-copy strong {
+      display: block;
+      margin-bottom: 6px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+    }
+    .footer-brand-copy p {
+      margin: 0;
+      color: #dbe3ff;
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+    .footer-link-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .footer-link-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #eef4ff;
+      font-weight: 700;
+      box-shadow: 0 12px 24px rgba(8, 10, 28, 0.14);
+    }
+    .footer-link-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-size: 0.74rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      color: #fff;
+      background: linear-gradient(135deg, rgba(143, 92, 255, 0.9), rgba(61, 184, 255, 0.84));
+      animation: icon-bob 4.2s ease-in-out infinite;
+    }
     .social-link {
       width: 42px;
       height: 42px;
@@ -1224,7 +1326,9 @@
       border-color: rgba(122, 243, 255, 0.24);
     }
     .footer-contact-pill span:last-child {
-      overflow-wrap: anywhere;
+      overflow-wrap: normal;
+      white-space: nowrap;
+      font-size: 0.88rem;
     }
     .copyright { margin-top: 20px; text-align: center; color: rgba(255,255,255,0.56); font-size: 0.9rem; }
 
@@ -2382,6 +2486,18 @@ img { display: block; max-width: 100%; height: auto; }
     grid-template-columns: 1fr;
   }
 
+  .counter-pill {
+    width: 100%;
+  }
+
+  .counter-number {
+    font-size: 0.98rem;
+  }
+
+  .counter-pill em {
+    font-size: 0.74rem;
+  }
+
   .topbar .button,
   .site-header .button {
     width: auto;
@@ -2394,6 +2510,43 @@ img { display: block; max-width: 100%; height: auto; }
   .contact-info-card,
   .footer-contact-pill {
     padding: 12px 13px;
+  }
+
+  .footer-brand-shell {
+    grid-template-columns: 56px 1fr;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .footer-brand-glow {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+  }
+
+  .footer-brand-copy strong {
+    font-size: 0.84rem;
+    letter-spacing: 0.08em;
+  }
+
+  .footer-brand-copy p {
+    font-size: 0.8rem;
+    line-height: 1.52;
+  }
+
+  .footer-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-link-pill {
+    min-height: 46px;
+    padding: 11px 12px;
+    font-size: 0.86rem;
+  }
+
+  .footer-contact-pill span:last-child {
+    font-size: 0.8rem;
+    letter-spacing: -0.01em;
   }
 
   .blog-hero-visual {
