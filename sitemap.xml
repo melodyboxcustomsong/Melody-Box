@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/birthday-song-ideas-india.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/romantic-birthday-song-girlfriend.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/emotional-birthday-song-mother.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/wedding-entry-song-ideas-india.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/bride-groom-custom-song-ideas.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/latest-indian-wedding-song-trends.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/proposal-song-ideas-india.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/love-song-long-distance-relationship.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/best-romantic-custom-song-ideas.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/benefits-business-promotion-songs.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/jingle-vs-song-branding.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/how-music-boosts-business-marketing.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/digital-wedding-invite-websites-better-than-cards.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/birthday-website-with-countdown-trending.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/proposal-website-ideas-that-impress.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/anniversary-celebration-song-ideas.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/custom-song-for-any-occasion.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/digital-celebration-websites.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/website-ideas-for-any-event.html</loc></url>
-  <url><loc>https://melodyboxcustomsong.github.io/Melody-Box/blog/spotify-distribution-and-caller-tune-setup.html</loc></url>
+
+  <url>
+    <loc>https://melodybox.in/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://melodybox.in/blog.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url><loc>https://melodybox.in/blog/birthday-song-ideas-india.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/romantic-birthday-song-girlfriend.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/emotional-birthday-song-mother.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/wedding-entry-song-ideas-india.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/bride-groom-custom-song-ideas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/latest-indian-wedding-song-trends.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/proposal-song-ideas-india.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/love-song-long-distance-relationship.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/best-romantic-custom-song-ideas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/benefits-business-promotion-songs.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/jingle-vs-song-branding.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/how-music-boosts-business-marketing.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/digital-wedding-invite-websites-better-than-cards.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/birthday-website-with-countdown-trending.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/proposal-website-ideas-that-impress.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/anniversary-celebration-song-ideas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/custom-song-for-any-occasion.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/digital-celebration-websites.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/website-ideas-for-any-event.html</loc><priority>0.8</priority></url>
+  <url><loc>https://melodybox.in/blog/spotify-distribution-and-caller-tune-setup.html</loc><priority>0.8</priority></url>
+
 </urlset>
-
-
